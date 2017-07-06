@@ -159,6 +159,7 @@
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
+    Plugin 'jelera/vim-javascript-syntax'           " javascript
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 
