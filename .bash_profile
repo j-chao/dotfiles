@@ -20,15 +20,14 @@ export PS1="\u:\W $ "
 
     alias vimrc='vim ~/.vimrc'
     alias bashp='vim ~/.bash_profile'
+    alias cdc='cd /Users/jchao100/Documents/cumulus'
 
 # SSH
+    alias dap='ssh bdpd-vm05-0.uhc.com'
+
     alias stampede='ssh juchao@stampede.tacc.utexas.edu'
     alias ls5='ssh juchao@ls5.tacc.utexas.edu'
     alias isp='ssh juchao@isp.tacc.utexas.edu'
-    alias venus='ssh juchao@bme-venus.bme.utexas.edu'
-    alias nova='ssh -t juchao@bme-venus.bme.utexas.edu exec "ssh nova"'
-
-    alias dap='ssh bdpd-vm05-0.uhc.com'
 
 
 # TERMINAL COLOR CONFIGS
