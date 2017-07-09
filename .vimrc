@@ -24,7 +24,7 @@
     "command! -nargs=1 Nack Ack "<args>" $HOME/Documents/UT/YEAR6
     "nnoremap <leader>] :Nack
     let g:ctrlp_map = '<nul>'
-    nnoremap <C-o> :CtrlP~/Documents/UT<CR>
+    nnoremap <C-o> :CtrlP~/Documents/<CR>
     let g:ctrlp_working_path_mode = ''
 
 " FOLDING OPTIONS
@@ -50,9 +50,9 @@
     nnoremap  <leader><space> :nohlsearch<CR>
 
     " NOTES ===================================
-        command! -nargs=1 Ngrep lvimgrep "<args>" $HOME/Documents/UT/YEAR6/**/*.md      "taken from connermcd
+        "command! -nargs=1 Ngrep lvimgrep "<args>" $HOME/Documents/UT/YEAR6/**/*.md      "taken from connermcd
         " nnoremap <leader>] :Ngrep 
-        nnoremap <C-n> :lne<cr>z
+        "nnoremap <C-n> :lne<cr>z
         " nnoremap <C-p> :lp<cr>z
 
     " SAVE FILE =============================== 
@@ -95,7 +95,7 @@
 " =================================================
     let g:ycm_server_python_interpreter = ''
     let g:ycm_key_list_select_completion = ['\<C-TAB>','\<DOWN>']
-    "let g:ycm_key_list_previous_completion = ['\<c-s-tab>','\<UP>']
+    let g:ycm_key_list_previous_completion = ['\<c-s-tab>','\<UP>']
 
 " SUPERTAB OPTIONS
 " ================================================
@@ -137,29 +137,32 @@
     Plugin 'VundleVim/Vundle.vim'                   " plugin manager
     Plugin 'scrooloose/nerdcommenter'               " easy commenting
     Plugin 'scrooloose/nerdtree'                    " browse repo/directories
-    "Plugin 'scrooloose/syntastic'                   " syntax checking
-    "Plugin 'valloric/youcompleteme'                 " code completion engine
-    "Plugin 'rdnetto/YCM-Generator'                  " generate .ycm_extra_conf.py
-    "Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
-    Plugin 'majutsushi/tagbar'                      " browse ctags
+    Plugin 'scrooloose/syntastic'                   " syntax checking
+    Plugin 'valloric/youcompleteme'                 " code completion engine
+    Plugin 'rdnetto/YCM-Generator'                  " generate ycm config files
+    Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
+    "Plugin 'majutsushi/tagbar'                      " browse ctags
     Plugin 'altercation/solarized'                  " solarized color scheme
     Plugin 'altercation/vim-colors-solarized'       " templates for solarized
     Plugin 'vim-airline/vim-airline'                " status/tab line
     Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
-    Plugin 'sjl/gundo.vim'                          " visualize undo tree
+    "Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'w0ng/vim-hybrid'                        " vim color scheme
     "Plugin 'lervag/vimtex'                          " for editing LaTeX files
     Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
     Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
-    "Plugin 'SirVer/ultisnips'                       " snippets engine
+    Plugin 'SirVer/ultisnips'                       " snippets engine
     Plugin 'honza/vim-snippets'                     " snippets
     Plugin 'tpope/vim-fugitive'                     " Git wrapper
     Plugin 'airblade/vim-gitgutter'                 " show git changes by left line numbers
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
-    Plugin 'jelera/vim-javascript-syntax'           " javascript
+    Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
+    Plugin 'mattn/emmet-vim'                        " plugin for HTML
+    Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
+    Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 

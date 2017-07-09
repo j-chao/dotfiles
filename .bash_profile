@@ -46,6 +46,12 @@ export PS1="\u:\W $ "
 # =================================================================
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+
 # AWS Completer
 # =================================================================
     complete -C '/usr/local/bin/aws_completer' aws
+
+
+# Path to AWS Elastic Beanstalk CLI
+# =================================================================
+    export PATH=/Users/jchao100/Library/Python/2.7/bin:$PATH
