@@ -1,19 +1,28 @@
-# Powerline
+# Powerline-shell
 # ========================================================
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+function _update_ps1() {
+    PS1="$(/Users/jchao100/.powerline/powerline-shell/powerline-shell.py $? 2> /dev/null)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
 
 # BASH prompt
 # ========================================================
-#export PS1="\u:\W $ "
+export PS1="\u:\W $ "
+
 
 # ALIAS
 # ========================================================
     alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES;
     killall Finder /System/Library/CoreServices/Finder.app'
-
     alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO;
     killall Finder /System/Library/CoreServices/Finder.app'
 
@@ -23,7 +32,6 @@ POWERLINE_BASH_SELECT=1
 
 # SSH
     alias dap='ssh bdpd-vm05-0.uhc.com'
-
     alias stampede='ssh juchao@stampede.tacc.utexas.edu'
     alias ls5='ssh juchao@ls5.tacc.utexas.edu'
     alias isp='ssh juchao@isp.tacc.utexas.edu'
@@ -37,7 +45,8 @@ POWERLINE_BASH_SELECT=1
 
 # iTERM 2 SHELL INTEGRATION
 # =================================================================
-    test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+    test -e "${HOME}/.iterm2_shell_integration.bash" && \
+        source "${HOME}/.iterm2_shell_integration.bash"
   
 
 # HomeBrew Cask 
