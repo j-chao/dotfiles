@@ -108,7 +108,7 @@
     let g:UltiSnipsJumpBackwardTrigger = "<c-q>"
     let g:UltiSnipsEditSplit           = "normal"             " If you want :UltiSnipsEdit to split your window.
     let g:UltiSnipsSnippetDirectories  = ["UltiSnips", "vim-snippets"]
-    let g:UltiSnipsSnippetsDir         = "~/.vim/my_snippets"
+    let g:UltiSnipsSnippetsDir         = "~/.vim/my_snippets" 
     let g:UltiSnipsUsePythonVersion    = 2
 
 " STATUS LINE
@@ -117,6 +117,9 @@
     let g:airline#extensions#tabline#enabled = 1    " show statusline for buffers
     let g:airline_powerline_fonts = 1               " allow powerline_fonts
     "let g:airline_theme = 'badwolf'
+    python from powerline.vim import setup as powerline_setup
+    python powerline_setup()
+    python del powerline_setup
 
 " CUSTOM FUNCTIONS
 " ================================================
@@ -137,15 +140,15 @@
     Plugin 'VundleVim/Vundle.vim'                   " plugin manager
     Plugin 'scrooloose/nerdcommenter'               " easy commenting
     Plugin 'scrooloose/nerdtree'                    " browse repo/directories
-    Plugin 'scrooloose/syntastic'                   " syntax checking
+    "Plugin 'scrooloose/syntastic'                   " syntax checking
     Plugin 'valloric/youcompleteme'                 " code completion engine
-    Plugin 'rdnetto/YCM-Generator'                  " generate ycm config files
+    Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
     "Plugin 'majutsushi/tagbar'                      " browse ctags
-    Plugin 'altercation/solarized'                  " solarized color scheme
-    Plugin 'altercation/vim-colors-solarized'       " templates for solarized
-    Plugin 'vim-airline/vim-airline'                " status/tab line
-    Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
+    "Plugin 'altercation/solarized'                  " solarized color scheme
+    "Plugin 'altercation/vim-colors-solarized'       " templates for solarized
+    "Plugin 'vim-airline/vim-airline'                " status/tab line
+    "Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
     "Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'w0ng/vim-hybrid'                        " vim color scheme
