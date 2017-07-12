@@ -24,7 +24,7 @@
     "command! -nargs=1 Nack Ack "<args>" $HOME/Documents/UT/YEAR6
     "nnoremap <leader>] :Nack
     let g:ctrlp_map = '<nul>'
-    nnoremap <C-o> :CtrlP~/Documents/<CR>
+    nnoremap <C-o> :CtrlP~/Documents/cumulus/cumulus_website<CR>
     let g:ctrlp_working_path_mode = ''
 
 " FOLDING OPTIONS
@@ -85,6 +85,8 @@
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+
+    au BufRead,BufNewFile *.ts   setfiletype typescript
 
 " VIM-TEX OPTIONS
 " =================================================
@@ -162,10 +164,11 @@
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
-    Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
-    Plugin 'mattn/emmet-vim'                        " plugin for HTML
     Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
-    Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
+    "Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
+    "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
+    "Plugin 'mattn/emmet-vim'                        " plugin for HTML
+    "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 
