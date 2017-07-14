@@ -2,6 +2,7 @@
 " ================================================
     set nocompatible
     filetype plugin indent on        " load filetype-specific indent plugin/indent files
+    set relativenumber
     set number                       " show line numbers
     syntax enable                    " enable syntax procesing
     set tabstop=4                    " number of visual spaces per TAB
