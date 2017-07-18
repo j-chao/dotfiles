@@ -25,7 +25,7 @@
     "command! -nargs=1 Nack Ack "<args>" $HOME/Documents/UT/YEAR6
     "nnoremap <leader>] :Nack
     let g:ctrlp_map = '<nul>'
-    nnoremap <C-o> :CtrlP~/Documents/cumulus/cumulus_website<CR>
+    nnoremap <C-o> :CtrlP~/go/src/github.com/JCHAO<CR>
     let g:ctrlp_working_path_mode = ''
 
 " FOLDING OPTIONS
@@ -166,6 +166,7 @@
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
     Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
+    Plugin 'fatih/vim-go'                           " plugin for Golang
     "Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
     "Plugin 'mattn/emmet-vim'                        " plugin for HTML
