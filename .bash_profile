@@ -69,3 +69,8 @@ export PS1="\u:\W $ "
 # =================================================================
     export GOPATH=/Users/jchao100/go
     export PATH=/Users/jchao100/go/bin:$PATH
+
+
+# Path to Boxfuse
+# =================================================================
+    export PATH=/Users/jchao100/boxfuse:$PATH
