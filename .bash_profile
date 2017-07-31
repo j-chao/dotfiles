@@ -28,6 +28,8 @@ export PS1="\u:\W $ "
 
     alias vimrc='vim ~/.vimrc'
     alias bashp='vim ~/.bash_profile'
+    alias ga='git add .'
+    alias gp='git push'
     alias cdc='cd /Users/jchao100/Documents/cumulus'
 
 # SSH
