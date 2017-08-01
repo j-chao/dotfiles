@@ -33,7 +33,7 @@ export PS1="\u:\W $ "
     alias cdc='cd /Users/jchao100/Documents/cumulus'
 
 # SSH
-    alias dap='ssh bdpd-vm05-0.uhc.com'
+    alias dap='ssh dbsls0306'
     alias stampede='ssh juchao@stampede.tacc.utexas.edu'
     alias ls5='ssh juchao@ls5.tacc.utexas.edu'
     alias isp='ssh juchao@isp.tacc.utexas.edu'
