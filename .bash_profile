@@ -31,6 +31,7 @@ export PS1="\u:\W $ "
     alias ga='git add .'
     alias gp='git push'
     alias cdc='cd /Users/jchao100/Documents/cumulus'
+    alias mysql='mysql -u root'
 
 # SSH
     alias dap='ssh dbsls0306'
@@ -73,6 +74,6 @@ export PS1="\u:\W $ "
     export PATH=/Users/jchao100/go/bin:$PATH
 
 
-# Path to Boxfuse
+# Path to MySQL
 # =================================================================
-    export PATH=/Users/jchao100/boxfuse:$PATH
+    export PATH=/usr/local/mysql/bin:$PATH
