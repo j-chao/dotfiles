@@ -34,7 +34,7 @@ export PS1="\u:\W $ "
     alias mysql='mysql -u root'
 
 # SSH
-    alias dap='ssh dbsls0306'
+    alias t_dev='ssh dbsls0306'
     alias stampede='ssh juchao@stampede.tacc.utexas.edu'
     alias ls5='ssh juchao@ls5.tacc.utexas.edu'
     alias isp='ssh juchao@isp.tacc.utexas.edu'
