@@ -31,6 +31,7 @@ export PS1="\u:\W $ "
     alias ga='git add .'
     alias gp='git push'
     alias cdc='cd /Users/jchao100/Documents/cumulus'
+    alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
     alias mysql='mysql -u root'
 
 # SSH
