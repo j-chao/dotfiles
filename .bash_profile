@@ -84,5 +84,6 @@ export PS1="\u:\W $ "
 # JBOSS Config
 # =================================================================
     #export JBOSS_HOME=/usr/local/opt/jboss-as/libexec
-    export JBOSS_HOME=/Users/jchao100/EAP-7.0.0
+    #export JBOSS_HOME=/Users/jchao100/EAP-7.0.0
+    export JBOSS_HOME=/Users/jchao100/EAP-6.4.0
     export PATH=${PATH}:${JBOSS_HOME}/bin
