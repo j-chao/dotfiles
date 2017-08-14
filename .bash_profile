@@ -32,7 +32,7 @@ export PS1="\u:\W $ "
     alias gp='git push'
     alias mysql='mysql -u root'
     alias latexmk='latexmk -pdf -pvc'
-    alias cdc='cd /Users/jchao100/Documents/cumulus'
+    alias cdc='cd /Users/jchao100/Documents/CPI'
     alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
 
 # SSH
