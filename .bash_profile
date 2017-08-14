@@ -79,3 +79,10 @@ export PS1="\u:\W $ "
 # Path to MySQL
 # =================================================================
     export PATH=/usr/local/mysql/bin:$PATH
+
+
+# JBOSS Config
+# =================================================================
+    #export JBOSS_HOME=/usr/local/opt/jboss-as/libexec
+    export JBOSS_HOME=/Users/jchao100/EAP-7.0.0
+    export PATH=${PATH}:${JBOSS_HOME}/bin
