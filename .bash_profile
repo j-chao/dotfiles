@@ -34,6 +34,7 @@ export PS1="\u:\W $ "
     alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
     alias latexmk='latexmk -pdf -pvc'
     alias cdc='cd /Users/jchao100/Documents/CPI'
+    alias cpi='cd /Users/jchao100/Documents/CPI/optumcare-cpi-solution-webapp'
     alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
 
 # SSH
@@ -64,6 +65,11 @@ export PS1="\u:\W $ "
 # Custom scripts
 # =================================================================
     export PATH=/Users/jchao100/bin:$PATH
+
+
+# FZF
+# =================================================================
+    alias fzf="fzf --preview 'cat {}'"
 
 
 # AWS Completer
@@ -102,5 +108,4 @@ export PS1="\u:\W $ "
  setjdk() {
      export JAVA_HOME=$(/usr/libexec/java_home -v $1)
  }
-
  export PATH=${JAVA_HOME}/bin:$PATH
