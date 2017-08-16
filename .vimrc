@@ -25,7 +25,7 @@
     "command! -nargs=1 Nack Ack "<args>" $HOME/Documents/UT/YEAR6
     "nnoremap <leader>] :Nack
     let g:ctrlp_map = '<nul>'
-    nnoremap <C-o> :CtrlP~/go/src/github.com/JCHAO<CR>
+    "nnoremap <C-o> :CtrlP~/go/src/github.com/JCHAO<CR>
     let g:ctrlp_working_path_mode = ''
 
 " FOLDING OPTIONS
@@ -72,7 +72,14 @@
         noremap <C-k> <C-w>k
         noremap <C-l> <C-w>l
 
-" GUNDO OPTIONS ===================================
+
+" FZF OPTIONS 
+" =================================================
+    nnoremap <C-o> :FZF<CR>
+
+
+" GUNDO OPTIONS 
+" =================================================
     let g:gundo_return_on_revert=1 
     let g:gundo_preview_bottom=1
 
@@ -171,6 +178,7 @@
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
     "Plugin 'mattn/emmet-vim'                        " plugin for HTML
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
+    Plugin 'junegunn/fzf'
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 

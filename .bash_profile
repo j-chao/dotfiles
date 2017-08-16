@@ -31,6 +31,7 @@ export PS1="\u:\W $ "
     alias ga='git add .'
     alias gp='git push'
     alias mysql='mysql -u root'
+    alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
     alias latexmk='latexmk -pdf -pvc'
     alias cdc='cd /Users/jchao100/Documents/CPI'
     alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
@@ -60,6 +61,11 @@ export PS1="\u:\W $ "
     export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 
+# Custom scripts
+# =================================================================
+    export PATH=/Users/jchao100/bin:$PATH
+
+
 # AWS Completer
 # =================================================================
     complete -C '/usr/local/bin/aws_completer' aws
@@ -86,4 +92,15 @@ export PS1="\u:\W $ "
     #export JBOSS_HOME=/usr/local/opt/jboss-as/libexec
     #export JBOSS_HOME=/Users/jchao100/EAP-7.0.0
     export JBOSS_HOME=/Users/jchao100/EAP-6.4.0
+    export EAP_HOME=/Users/jchao100/EAP-6.4.0
     export PATH=${PATH}:${JBOSS_HOME}/bin
+
+
+# Java 
+# =================================================================
+ export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+ setjdk() {
+     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+ }
+
+ export PATH=${JAVA_HOME}/bin:$PATH
