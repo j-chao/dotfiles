@@ -30,8 +30,6 @@ export PS1="\u:\W $ "
     alias bashp='vim ~/.bash_profile'
     alias ga='git add .'
     alias gp='git push'
-    alias mysql='mysql -u root'
-    alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
     alias latexmk='latexmk -pdf -pvc'
     alias cdc='cd /Users/jchao100/Documents/CPI'
     alias cpi='cd /Users/jchao100/Documents/CPI/optumcare-cpi-solution-webapp'
@@ -42,6 +40,15 @@ export PS1="\u:\W $ "
     alias stampede='ssh juchao@stampede.tacc.utexas.edu'
     alias ls5='ssh juchao@ls5.tacc.utexas.edu'
     alias isp='ssh juchao@isp.tacc.utexas.edu'
+
+# MySQL
+
+    alias mysql='mysql -u root'
+    alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
+    alias mysql-cpi-dmid='mysql -u jchao100 -h dbsrd2653 -D ocpm01'
+    alias mysql-cpi-ddb='mysql -u jchao100 -h DBSRD2683 -D cpitooldb'
+    alias mysql-cpi-tmid='mysql -u jchao100 -h dbsrt1100 -D ocpm01'
+    alias mysql-cpi-tdb='mysql -u jchao100 -h dbsrt1139 -D cpitooldb'
 
 
 # TERMINAL COLOR CONFIGS
@@ -69,7 +76,7 @@ export PS1="\u:\W $ "
 
 # FZF
 # =================================================================
-    alias fzf="fzf --preview 'cat {}'"
+    alias fzf="fzf-tmux --preview 'cat {}'"
 
 
 # AWS Completer

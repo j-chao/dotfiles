@@ -15,6 +15,7 @@
     set showmatch                    " highligh matching [{()}]
     set backspace=2                  " make backspace work like most other apps
     set scrolloff=20                 " maintain 20 lines top/bottom of selected line on screen
+    set mouse=a                      " allow mouse
 
 " SEARCHING OPTIONS
 " ================================================ 
@@ -43,7 +44,7 @@
 
 " KEY MAPINGS
 " =================================================
-    nmap      <F2>            :NERDTreeToggle<CR>
+    nmap      <leader>t     :NERDTreeToggle<CR>
     nmap      <F3>            :TagbarToggle<CR>
     nnoremap  <F4>            :GundoToggle<CR>
     nmap      <F5>            :setlocal spell! spelllang=en_us<CR>
@@ -77,6 +78,9 @@
 " =================================================
     nnoremap <C-o> :FZF<CR>
 
+" NERDTREE OPTIONS 
+" =================================================
+    let g:NERDTreeWinSize=60
 
 " GUNDO OPTIONS 
 " =================================================
@@ -121,6 +125,10 @@
     let g:UltiSnipsSnippetsDir         = "~/.vim/my_snippets" 
     let g:UltiSnipsUsePythonVersion    = 2
 
+" INDENTLINE OPTIONS
+" ================================================
+let g:indentLine_color_term = 239
+
 " STATUS LINE
 " ================================================
     set laststatus=2                                " always show statusline
@@ -161,10 +169,11 @@
     "Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
     "Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
+    Plugin 'Yggdroot/indentLine'                    " indent highlight
     Plugin 'w0ng/vim-hybrid'                        " vim color scheme
     "Plugin 'lervag/vimtex'                          " for editing LaTeX files
     Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
-    Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
+    "Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
     Plugin 'SirVer/ultisnips'                       " snippets engine
     Plugin 'honza/vim-snippets'                     " snippets
     Plugin 'tpope/vim-fugitive'                     " Git wrapper
@@ -173,12 +182,13 @@
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
     Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
-    Plugin 'fatih/vim-go'                           " plugin for Golang
+    "Plugin 'fatih/vim-go'                           " plugin for Golang
     "Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
     "Plugin 'mattn/emmet-vim'                        " plugin for HTML
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
-    Plugin 'junegunn/fzf'
+    Plugin 'junegunn/fzf'                           " fuzzy finder
+    Plugin 'junegunn/fzf.vim'                       " fuzzy finder
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 
