@@ -75,7 +75,7 @@ export PS1="\u:\W $ "
 
 # FZF
 # =================================================================
-    alias fzf="fzf-tmux --preview 'cat {}'"
+    alias fzf="fzf --preview 'head -100 {}'"
 
 
 # AWS Completer
