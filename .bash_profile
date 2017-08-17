@@ -31,8 +31,7 @@ export PS1="\u:\W $ "
     alias ga='git add .'
     alias gp='git push'
     alias latexmk='latexmk -pdf -pvc'
-    alias cdc='cd /Users/jchao100/Documents/CPI'
-    alias cpi='cd /Users/jchao100/Documents/CPI/optumcare-cpi-solution-webapp'
+    alias cpi='cd /Users/jchao100/Documents/CPI/code'
     alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
 
 # SSH
