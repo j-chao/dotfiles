@@ -28,6 +28,7 @@ export PS1="\u:\W $ "
 
     alias vimrc='vim ~/.vimrc'
     alias bashp='vim ~/.bash_profile'
+    alias gs='git status'
     alias ga='git add .'
     alias gp='git push'
     alias latexmk='latexmk -pdf -pvc'
