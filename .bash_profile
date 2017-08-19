@@ -30,16 +30,14 @@ export PS1="\u:\W $ "
     alias bashp='vim ~/.bash_profile'
     alias gs='git status'
     alias ga='git add .'
+    alias gcm="git commit -m '"
     alias gp='git push'
     alias latexmk='latexmk -pdf -pvc'
     alias cpi='cd /Users/jchao100/Documents/CPI/code'
     alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
 
 # SSH
-    alias t_dev='ssh dbsls0306'
-    alias stampede='ssh juchao@stampede.tacc.utexas.edu'
-    alias ls5='ssh juchao@ls5.tacc.utexas.edu'
-    alias isp='ssh juchao@isp.tacc.utexas.edu'
+    alias lake-d='ssh dbsls0306'
 
 # MySQL
 
