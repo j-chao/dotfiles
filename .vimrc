@@ -12,7 +12,7 @@
     set cursorline                   " highlight current line
     set wildmenu                     " visual autocomplete for command menu
     set lazyredraw                   " redraw only when we need to
-    set showmatch                    " highligh matching [{()}]
+    set showmatch                    " highligh matching [{()}] 
     set backspace=2                  " make backspace work like most other apps
     set scrolloff=20                 " maintain 20 lines top/bottom of selected line on screen
     set mouse=a                      " allow mouse
@@ -38,14 +38,14 @@
 
 " PARAGRAPH FORMATTING OPTIONS
 " ================================================
-    set textwidth=100                " set text witdth 
+    "set textwidth=120                " set text witdth 
     set colorcolumn=+2              " set colored line at tw
     highlight ColorColumn ctermbg=7
 
 " KEY MAPINGS
 " =================================================
-    nmap      <leader>t     :NERDTreeToggle<CR>
-    nmap      <F3>            :TagbarToggle<CR>
+    nmap      <leader>t       :NERDTreeToggle<CR>
+    nmap      <leader>c       :TagbarToggle<CR>
     nnoremap  <F4>            :GundoToggle<CR>
     nmap      <F5>            :setlocal spell! spelllang=en_us<CR>
     nmap      <F9>            gwap
@@ -80,7 +80,11 @@
 
 " NERDTREE OPTIONS 
 " =================================================
-    let g:NERDTreeWinSize=60
+    let g:NERDTreeWinSize=50
+
+" NERDTREE OPTIONS 
+" =================================================
+    let g:tagbar_width = 60 
 
 " GUNDO OPTIONS 
 " =================================================
@@ -163,6 +167,7 @@ let g:indentLine_color_term = 239
     Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
     "Plugin 'majutsushi/tagbar'                      " browse ctags
+    Plugin 'craigemery/vim-autotag'
     "Plugin 'altercation/solarized'                  " solarized color scheme
     "Plugin 'altercation/vim-colors-solarized'       " templates for solarized
     "Plugin 'vim-airline/vim-airline'                " status/tab line
@@ -170,9 +175,9 @@ let g:indentLine_color_term = 239
     "Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'Yggdroot/indentLine'                    " indent highlight
-    Plugin 'w0ng/vim-hybrid'                        " vim color scheme
+    "Plugin 'w0ng/vim-hybrid'                        " vim color scheme
     "Plugin 'lervag/vimtex'                          " for editing LaTeX files
-    Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
+    "Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
     "Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
     Plugin 'SirVer/ultisnips'                       " snippets engine
     Plugin 'honza/vim-snippets'                     " snippets
