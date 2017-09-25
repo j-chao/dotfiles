@@ -50,12 +50,13 @@
     nmap      <F5>            :setlocal spell! spelllang=en_us<CR>
     nmap      <F9>            gwap
     nnoremap  <leader><space> :nohlsearch<CR>
+    nnoremap  <C-p>           :Buffers<CR>
 
     " NOTES ===================================
         "command! -nargs=1 Ngrep lvimgrep "<args>" $HOME/Documents/UT/YEAR6/**/*.md      "taken from connermcd
-        " nnoremap <leader>] :Ngrep 
+        "nnoremap <leader>] :Ngrep 
         "nnoremap <C-n> :lne<cr>z
-        " nnoremap <C-p> :lp<cr>z
+        "nnoremap <C-p> :lp<cr>z
 
     " SAVE FILE =============================== 
         inoremap <C-s> <ESC>:w<CR> 
