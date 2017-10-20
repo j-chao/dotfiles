@@ -47,6 +47,7 @@ export PS1="\u:\W $ "
     alias mysql-cpi-ddb='mysql -u jchao100 -h DBSRD2683 -D cpitooldb'
     alias mysql-cpi-tmid='mysql -u jchao100 -h dbsrt1100 -D ocpm01'
     alias mysql-cpi-tdb='mysql -u jchao100 -h dbsrt1139 -D cpitooldb'
+    alias mysql-cpi-sdb='mysql -u jchao100 -h dbsrs1808 -D cpitooldb'
 
 
 # TERMINAL COLOR CONFIGS
