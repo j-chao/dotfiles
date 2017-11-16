@@ -93,6 +93,9 @@ export PS1="\u:\W $ "
     export GOPATH=/Users/jchao100/go
     export PATH=/Users/jchao100/go/bin:$PATH
 
+# Path to Airflow Workspace
+# =================================================================
+    export AIRFLOW_HOME=/Users/jchao100/Documents/CPI/code/airflow
 
 # Path to MySQL
 # =================================================================
