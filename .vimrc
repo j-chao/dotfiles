@@ -5,7 +5,6 @@
     set relativenumber
     set number                       " show line numbers
     syntax enable                    " enable syntax procesing
-    set conceallevel=0               " do not use conceal mode
     set tabstop=4                    " number of visual spaces per TAB
     set shiftwidth=4
     set expandtab                    " tabs are spaces
