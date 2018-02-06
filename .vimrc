@@ -188,7 +188,7 @@ let g:indentLine_color_term = 239
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
     "Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
-    "Plugin 'fatih/vim-go'                           " plugin for Golang
+    Plugin 'fatih/vim-go'                           " plugin for Golang
     "Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
     "Plugin 'mattn/emmet-vim'                        " plugin for HTML
