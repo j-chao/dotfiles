@@ -15,6 +15,7 @@
     set showmatch                    " highligh matching [{()}] 
     set backspace=2                  " make backspace work like most other apps
     set scrolloff=20                 " maintain 20 lines top/bottom of selected line on screen
+    set clipboard=unnamed            " use system clipboard
     "set mouse=a                      " allow mouse
 
 " SEARCHING OPTIONS
