@@ -9,13 +9,13 @@
     set shiftwidth=4
     set expandtab                    " tabs are spaces
     set showcmd                      " show command in bottom bar
-    set cursorline                   " highlight current line
+    "set cursorline                   " highlight current line
     set wildmenu                     " visual autocomplete for command menu
     set lazyredraw                   " redraw only when we need to
     set showmatch                    " highligh matching [{()}] 
     set backspace=2                  " make backspace work like most other apps
     set scrolloff=20                 " maintain 20 lines top/bottom of selected line on screen
-    set mouse=a                      " allow mouse
+    "set mouse=a                      " allow mouse
 
 " SEARCHING OPTIONS
 " ================================================ 
@@ -39,14 +39,14 @@
 " PARAGRAPH FORMATTING OPTIONS
 " ================================================
     set textwidth=120                " set text witdth 
-    set colorcolumn=+2              " set colored line at tw
-    highlight ColorColumn ctermbg=7
+    "set colorcolumn=+2              " set colored line at tw
+    "highlight ColorColumn ctermbg=7
 
 " KEY MAPINGS
 " =================================================
     nmap      <leader>t       :NERDTreeToggle<CR>
     nmap      <leader>c       :TagbarToggle<CR>
-    nnoremap  <F4>            :GundoToggle<CR>
+    nnoremap  <leader>g       :GundoToggle<CR>
     nmap      <F5>            :setlocal spell! spelllang=en_us<CR>
     nmap      <F9>            gwap
     nnoremap  <leader><space> :nohlsearch<CR>
@@ -63,10 +63,11 @@
         nnoremap <C-s> :w<CR>
 
     " VIM-SMOOTH-SCROLL =======================
-        noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 2)<CR>
-        noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 2)<CR>
-        noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 4)<CR>
-        noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 4)<CR>
+        noremap <silent> <c-u> :call smooth_scroll#up(&scroll, 0, 5)<CR>
+        noremap <silent> <c-d> :call smooth_scroll#down(&scroll, 0, 5)<CR>
+        noremap <silent> <c-b> :call smooth_scroll#up(&scroll*2, 0, 10)<CR>
+        noremap <silent> <c-f> :call smooth_scroll#down(&scroll*2, 0, 10)<CR>
+
 
     " VIM WINDOW MOVEMENT =====================
         noremap <C-h> <C-w>h
@@ -77,7 +78,7 @@
 
 " FZF OPTIONS 
 " =================================================
-    nnoremap <C-o> :FZF<CR>
+    nnoremap <C-o> :call fzf#vim#files('', fzf#vim#with_preview('right'))<CR>
 
 " NERDTREE OPTIONS 
 " =================================================
@@ -133,6 +134,7 @@
 " INDENTLINE OPTIONS
 " ================================================
 let g:indentLine_color_term = 239
+let g:indentLine_setConceal = 0
 
 " STATUS LINE
 " ================================================
@@ -163,17 +165,17 @@ let g:indentLine_color_term = 239
     Plugin 'VundleVim/Vundle.vim'                   " plugin manager
     Plugin 'scrooloose/nerdcommenter'               " easy commenting
     Plugin 'scrooloose/nerdtree'                    " browse repo/directories
-    "Plugin 'scrooloose/syntastic'                   " syntax checking
+    Plugin 'scrooloose/syntastic'                   " syntax checking
     Plugin 'valloric/youcompleteme'                 " code completion engine
     Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
-    "Plugin 'majutsushi/tagbar'                      " browse ctags
+    Plugin 'majutsushi/tagbar'                      " browse ctags
     Plugin 'craigemery/vim-autotag'
     "Plugin 'altercation/solarized'                  " solarized color scheme
     "Plugin 'altercation/vim-colors-solarized'       " templates for solarized
     "Plugin 'vim-airline/vim-airline'                " status/tab line
     "Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
-    "Plugin 'sjl/gundo.vim'                          " visualize undo tree
+    Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'Yggdroot/indentLine'                    " indent highlight
     "Plugin 'w0ng/vim-hybrid'                        " vim color scheme
@@ -187,22 +189,23 @@ let g:indentLine_color_term = 239
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
-    "Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
+    Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
     Plugin 'fatih/vim-go'                           " plugin for Golang
-    "Plugin 'jelera/vim-javascript-syntax'           " plugin for javascript
-    "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
-    "Plugin 'mattn/emmet-vim'                        " plugin for HTML
+    Plugin 'pangloss/vim-javascript'                "plugin for javascript
+    Plugin 'leafgarland/typescript-vim'             " plugin for typescript
+    Plugin 'mattn/emmet-vim'                        " plugin for HTML
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     Plugin 'junegunn/fzf'                           " fuzzy finder
     Plugin 'junegunn/fzf.vim'                       " fuzzy finder
+    Plugin 'flazz/vim-colorschemes'                 " colorscheme
     call vundle#end()
 
 " COLORSCHEME OPTIONS (w0ng/vim-hybrid) 
 " =================================================
-    set background=dark                             " background
-    let g:hybrid_custom_term_colors = 1
+    "set background=dark                             " background
+    "let g:hybrid_custom_term_colors = 1
     " let g:hybrid_reduced_contract = 1             " remove this line if using the default palette
-    colorscheme koehler                             " vim colorscheme
+    colorscheme hybrid                              " vim colorscheme
 
 " CLEAR VIM BUFFER ON EXIT
 " ==================================================
