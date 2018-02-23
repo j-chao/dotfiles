@@ -2,6 +2,7 @@
 " ================================================
     set nocompatible
     filetype plugin indent on        " load filetype-specific indent plugin/indent files
+    au BufNewFile,BufRead *.coffee set filetype=coffee
     set relativenumber
     set number                       " show line numbers
     syntax enable                    " enable syntax procesing
@@ -16,7 +17,7 @@
     set backspace=2                  " make backspace work like most other apps
     set scrolloff=20                 " maintain 20 lines top/bottom of selected line on screen
     set clipboard=unnamed            " use system clipboard
-    "set mouse=a                      " allow mouse
+    set mouse=a                      " allow mouse
 
 " SEARCHING OPTIONS
 " ================================================ 
@@ -83,16 +84,18 @@
 
 " NERDTREE OPTIONS 
 " =================================================
-    let g:NERDTreeWinSize=50
+    let g:NERDTreeWinSize=30
 
-" NERDTREE OPTIONS 
+" TAGBAR OPTIONS 
 " =================================================
-    let g:tagbar_width = 60 
+    let g:tagbar_width = 40 
 
 " GUNDO OPTIONS 
 " =================================================
     let g:gundo_return_on_revert=1 
     let g:gundo_preview_bottom=1
+    let g:gundo_prefer_python3=1
+    let g:gundo_width=40
 
 " SYNTASTIC OPTIONS
 " =================================================
@@ -111,6 +114,12 @@
 " =================================================
     let g:vimtex_fold_enabled=1
     let g:vimtex_toc_enables=1
+
+" VIM-TEX OPTIONS
+" =================================================
+    let coffee_compiler = '/usr/local/bin/coffee'
+
+
 
 " YOUCOMPLETEME OPTIONS
 " =================================================
@@ -194,6 +203,7 @@ let g:indentLine_setConceal = 0
     Plugin 'fatih/vim-go'                           " plugin for Golang
     Plugin 'pangloss/vim-javascript'                "plugin for javascript
     Plugin 'leafgarland/typescript-vim'             " plugin for typescript
+    Plugin 'kchmck/vim-coffee-script'               " plugin for coffeescript
     Plugin 'mattn/emmet-vim'                        " plugin for HTML
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     Plugin 'junegunn/fzf'                           " fuzzy finder
@@ -210,4 +220,4 @@ let g:indentLine_setConceal = 0
 
 " CLEAR VIM BUFFER ON EXIT
 " ==================================================
-    au VimLeave * :!clear:w
+    au VimLeave * :!clear
