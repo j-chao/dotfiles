@@ -161,7 +161,7 @@ tm() {
 
 # Path to AWS Elastic Beanstalk CLI
 # =================================================================
-    export PATH=/Users/jchao100/Library/Python/2.7/bin:$PATH
+    #export PATH=/Users/jchao100/Library/Python/2.7/bin:$PATH
 
 
 # Path to Go & Buffalo

@@ -139,7 +139,7 @@
     let g:UltiSnipsEditSplit           = "normal"             " If you want :UltiSnipsEdit to split your window.
     let g:UltiSnipsSnippetDirectories  = ["UltiSnips", "vim-snippets"]
     let g:UltiSnipsSnippetsDir         = "~/.vim/my_snippets" 
-    let g:UltiSnipsUsePythonVersion    = 2
+    let g:UltiSnipsUsePythonVersion    = 3
 
 " INDENTLINE OPTIONS
 " ================================================
@@ -151,10 +151,11 @@ let g:indentLine_setConceal = 0
     set laststatus=2                                " always show statusline
     let g:airline#extensions#tabline#enabled = 1    " show statusline for buffers
     let g:airline_powerline_fonts = 1               " allow powerline_fonts
-    "let g:airline_theme = 'badwolf'
-    python from powerline.vim import setup as powerline_setup
-    python powerline_setup()
-    python del powerline_setup
+    let g:airline_theme = 'deus'
+    "python from powerline.vim import setup as powerline_setup
+    "python powerline_setup()
+    "python del powerline_setup
+
 
 " CUSTOM FUNCTIONS
 " ================================================
@@ -180,18 +181,12 @@ let g:indentLine_setConceal = 0
     Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
     Plugin 'majutsushi/tagbar'                      " browse ctags
-    Plugin 'craigemery/vim-autotag'
-    "Plugin 'altercation/solarized'                  " solarized color scheme
-    "Plugin 'altercation/vim-colors-solarized'       " templates for solarized
-    "Plugin 'vim-airline/vim-airline'                " status/tab line
-    "Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
+    Plugin 'craigemery/vim-autotag'                 " automatically discover and update ctags files on save
+    Plugin 'vim-airline/vim-airline'                " status/tab line
+    Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
     Plugin 'sjl/gundo.vim'                          " visualize undo tree
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'Yggdroot/indentLine'                    " indent highlight
-    "Plugin 'w0ng/vim-hybrid'                        " vim color scheme
-    "Plugin 'lervag/vimtex'                          " for editing LaTeX files
-    "Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
-    "Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
     Plugin 'SirVer/ultisnips'                       " snippets engine
     Plugin 'honza/vim-snippets'                     " snippets
     Plugin 'tpope/vim-fugitive'                     " Git wrapper
@@ -208,6 +203,11 @@ let g:indentLine_setConceal = 0
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     Plugin 'junegunn/fzf'                           " fuzzy finder
     Plugin 'junegunn/fzf.vim'                       " fuzzy finder
+    "Plugin 'lervag/vimtex'                          " for editing LaTeX files
+    "Plugin 'mileszs/ack.vim'                        " Ack, similar to grep
+    "Plugin 'ctrlpvim/ctrlp.vim'                     " fuzzy finder
+    "Plugin 'altercation/solarized'                  " solarized color scheme
+    "Plugin 'altercation/vim-colors-solarized'       " templates for solarized
     Plugin 'flazz/vim-colorschemes'                 " colorscheme
     call vundle#end()
 
