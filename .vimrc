@@ -1,4 +1,4 @@
-" BASIC CONFIGURATIONS
+" BASIC CONFIGURATIONS 
 " ================================================
     set nocompatible
     filetype plugin indent on        " load filetype-specific indent plugin/indent files
@@ -149,7 +149,7 @@ let g:indentLine_setConceal = 0
 " STATUS LINE
 " ================================================
     set laststatus=2                                " always show statusline
-    let g:airline#extensions#tabline#enabled = 1    " show statusline for buffers
+    let g:airline#extensions#tabline#enabled = 0    " show statusline for buffers
     let g:airline_powerline_fonts = 1               " allow powerline_fonts
     let g:airline_theme = 'deus'
     "python from powerline.vim import setup as powerline_setup
