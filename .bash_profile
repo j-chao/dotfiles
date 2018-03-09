@@ -1,22 +1,24 @@
-# Powerline-shell
+# Powerline for shell
 # ========================================================
-#function _update_ps1() {
-    #PS1="$(/Users/jchao100/.powerline-shell/powerline-shell.py $? 2> /dev/null)"
-#}
+function _update_ps1() {
+    PS1="$(/Users/jchao100/.powerline-shell/powerline-shell.py $? 2> /dev/null)"
+}
 
-#if [ "$TERM" != "linux" ]; then
-    #PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-#fi
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 
-powerline-daemon -q
-POWERLINE_BASH_CONTINUATION=1
-POWERLINE_BASH_SELECT=1
-. /usr/local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+# Powerline for shell (slow version)
+# ========================================================
+#powerline-daemon -q
+#POWERLINE_BASH_CONTINUATION=1
+#POWERLINE_BASH_SELECT=1
+#. /usr/local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
 
 
 # BASH prompt
 # ========================================================
-export PS1="\u:\W $ "
+#export PS1="\u:\W $ "
 
 
 # ALIAS
@@ -33,14 +35,11 @@ export PS1="\u:\W $ "
     alias gcm="git commit -m '"
     alias gp='git push'
     alias latexmk='latexmk -pdf -pvc'
-    alias cpi='cd /Users/jchao100/Documents/CPI/code'
-    alias gos='cd /Users/jchao100/go/src/github.com/JCHAO/cumulus-website'
 
 # SSH
     alias lake-d='ssh dbsls0306'
 
 # MySQL
-
     alias mysql='mysql -u root'
     alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
     alias mysql-cpi-dmid='mysql -u jchao100 -h dbsrd2653 -D ocpm01'
