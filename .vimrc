@@ -203,7 +203,7 @@
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
-    "Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
+    Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
     "Plugin 'fatih/vim-go'                           " plugin for Golang
     "Plugin 'pangloss/vim-javascript'                "plugin for javascript
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
