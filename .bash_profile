@@ -41,7 +41,7 @@ fi
 
 # MySQL
     alias mysql='mysql -u root'
-    alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01 -pNuN3TV3U'
+    alias mysql-pathway='mysql -u ptrd_own -h 10.86.244.56 -D ptrd01'
     alias mysql-cpi-dmid='mysql -u jchao100 -h dbsrd2653 -D ocpm01'
     alias mysql-cpi-ddb='mysql -u jchao100 -h DBSRD2683 -D cpitooldb'
     alias mysql-cpi-tmid='mysql -u jchao100 -h dbsrt1100 -D ocpm01'
