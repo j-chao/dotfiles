@@ -155,6 +155,22 @@
     set conceallevel=1
     let g:indentLine_conceallevel=1
 
+" JAVA COMPLETION OPTIONS
+" ================================================
+    autocmd FileType java setlocal omnifunc=javacomplete#Complete
+    autocmd FileType java JCEnable
+
+" ALE OPTIONS
+" ================================================
+    let g:ale_fixers = {
+    \   'javascript':['eslint'],
+    \   'java':['google_java_format']
+    \}
+    let g:ale_fix_on_save = 1
+    let g:ale_completion_enabled = 1
+    let g:ale_lint_on_text_changed = 'never'
+
+
 " STATUS LINE
 " ================================================
     set laststatus=2                                " always show statusline
@@ -185,7 +201,8 @@
     Plugin 'VundleVim/Vundle.vim'                   " plugin manager
     Plugin 'scrooloose/nerdcommenter'               " easy commenting
     Plugin 'scrooloose/nerdtree'                    " browse repo/directories
-    Plugin 'scrooloose/syntastic'                   " syntax checking
+    Plugin 'w0rp/ale'                               " Asynchronous Lint Engine 
+    "Plugin 'scrooloose/syntastic'                   " syntax checking
     Plugin 'valloric/youcompleteme'                 " code completion engine
     Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
@@ -197,18 +214,18 @@
     Plugin 'godlygeek/tabular'                      " code alignment
     Plugin 'Yggdroot/indentLine'                    " indent highlight
     Plugin 'SirVer/ultisnips'                       " snippets engine
-    Plugin 'honza/vim-snippets'                     " snippets
-    Plugin 'tpope/vim-fugitive'                     " Git wrapper
+    Plugin 'honza/vim-snippets'                     " snippets provider
+    Plugin 'tpope/vim-fugitive'                     " Git wrapper in VIM
     Plugin 'airblade/vim-gitgutter'                 " show git changes by left line numbers
     Plugin 'terryma/vim-smooth-scroll'              " smooth scrolling
     Plugin 'tpope/vim-surround'                     " functionality for (),'', etc.
     Plugin 'jiangmiao/auto-pairs'                   " autocompletion for (),'',etc.
     Plugin 'suan/vim-instant-markdown'              " live preview of markdown files
     "Plugin 'fatih/vim-go'                           " plugin for Golang
-    "Plugin 'pangloss/vim-javascript'                "plugin for javascript
+    "Plugin 'pangloss/vim-javascript'                " plugin for javascript
     "Plugin 'leafgarland/typescript-vim'             " plugin for typescript
     "Plugin 'kchmck/vim-coffee-script'               " plugin for coffeescript
-    "Plugin 'artur-shaik/vim-javacomplete2'          " plugin for java
+    Plugin 'artur-shaik/vim-javacomplete2',{'for':'java'}         " java completion engine
     "Plugin 'mattn/emmet-vim'                        " plugin for HTML
     "Plugin 'jaxbot/browserlink.vim'                 " live preview of HTML files
     Plugin 'junegunn/fzf'                           " fuzzy finder
