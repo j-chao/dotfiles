@@ -122,10 +122,9 @@
     let g:vimtex_fold_enabled=1
     let g:vimtex_toc_enables=1
 
-" VIM-TEX OPTIONS
+" COFFEESCRIPT OPTIONS
 " =================================================
     let coffee_compiler = '/usr/local/bin/coffee'
-
 
 
 " YOUCOMPLETEME OPTIONS
@@ -207,7 +206,8 @@
     Plugin 'rdnetto/YCM-Generator'                  " generate YCM config files
     Plugin 'ervandew/supertab'                      " customize <TAB> and prevent YCM vs UltiSnips
     Plugin 'majutsushi/tagbar'                      " browse ctags
-    Plugin 'craigemery/vim-autotag'                 " automatically discover and update ctags files on save
+    Plugin 'ludovicchabant/vim-gutentags'           " regenerate and manage tags
+    "Plugin 'craigemery/vim-autotag'                 " automatically discover and update ctags files on save
     Plugin 'vim-airline/vim-airline'                " status/tab line
     Plugin 'vim-airline/vim-airline-themes'         " templates for status/tab line
     Plugin 'sjl/gundo.vim'                          " visualize undo tree
